@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SONY PS 介紹</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(233 235 238);
+            margin: 0px;
+            height: 100%;
+        }
+
+        h1 {
+            display: none;
+        }
+
+
+        nav {
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            z-index: 1;
+        }
+
+        nav .logo {
+            float: left;
+        }
+
+        nav .logo img {
+            height: 30px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }
+
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            color: white;
+            padding: 15px 20px;
+            display: block;
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgba(78, 78, 78, 0.534);
+            height: 50px;
+
+        }
+
+        .clearfix {
+            clear: both;
+        }
+
+        .H3 {
+            text-align: center;
+            margin-top: 70px;
+            letter-spacing: 3px;
+        }
+
+        .bgimg-1 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/60/PlayStation-SCPH-1000-with-Controller.jpg);
+            width: 100vw;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* opacity: 0.65; */
+
+        }
+
+
+        .title-1 {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 18px;
+            letter-spacing: 10px;
+            line-height: 45px;
+            text-align: center;
+            position: relative;
+            left: calc(50% - 131px);
+            /* top: calc(50% - 5px); */
+            top: 50%;
+            font-family: 微軟正黑體;
+        }
+
+        .text-1 {
+            text-align: justify;
+            font-family: 微軟正黑體;
+            font-size: 15px;
+            line-height: 27px;
+            margin-top: 15px;
+            margin-bottom: 70px;
+            margin-left: 70px;
+            margin-right: 70px;
+
+
+
+        }
+
+        .bgimg-2 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1c/PS2-Versions.jpg);
+            width: 100%;
+            min-height: 500px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* opacity: 0.65; */
+        }
+
+
+
+        .title-2 {
+            background-color: transparent;
+            color: blue;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 18px;
+            letter-spacing: 10px;
+            line-height: 45px;
+            text-align: center;
+            position: relative;
+            left: calc(50% - 131px);
+            top: 185px;
+            font-family: 微軟正黑體;
+        }
+
+        .text-2 {
+            background-color: black;
+            color: white;
+            text-align: justify;
+            font-family: 微軟正黑體;
+            font-size: 15px;
+            line-height: 27px;
+            border: 50px solid black;
+        }
+
+        .bgimg-3 {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/d3/PS3Versions.png);
+            width: 100%;
+            height: 60vh;
+            /* min-height: 400px; */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* opacity: 0.65; */
+        }
+
+
+        .title-3 {
+            background-color: transparent;
+            ;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 18px;
+            letter-spacing: 10px;
+            line-height: 45px;
+            text-align: center;
+            position: relative;
+            left: calc(50% - 131px);
+            top: calc(50% - 5px);
+            font-family: 微軟正黑體;
+        }
+
+        .text-3 {
+            background-color: black;
+            color: white;
+            text-align: justify;
+            font-family: 微軟正黑體;
+            font-size: 15px;
+            line-height: 27px;
+            border: 50px solid black;
+        }
+
+        .bgimg-4 {
+            background-image: url(https://live.staticflickr.com/622/21435339508_7f5e695190_b.jpg);
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* opacity: 0.65; */
+        }
+
+
+        .title-4 {
+            background-color: black;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 18px;
+            letter-spacing: 10px;
+            line-height: 45px;
+            text-align: center;
+            position: relative;
+            left: calc(50% - 131px);
+            top: calc(50% - 5px);
+            font-family: 微軟正黑體;
+        }
+
+        .back a {
+            height: 30px;
+            width: 60px;
+            background-color: rgba(61, 61, 61, 0.719);
+            color: white;
+            position: fixed;
+            bottom: 50px;
+            right: 0;
+            text-decoration: none;
+            z-index: 1;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 10px;
+
+        }
+
+
+
+        .home {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <a href="#banner">回首頁</a>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/134px-Playstation_logo_colour.svg.png"
+                    alt="ps logo">
+                <h1>sony ps</h1>
+            </div>
+            <ul>
+                <li>
+                    <a href="#banner">PS一代</a>
+                </li>
+                <li>
+                    <a href="#middle-top">PS二代</a>
+                </li>
+                <li>
+                    <a href="#middle-btm">PS三代</a>
+                </li>
+                <li>
+                    <a href="#bottom">PS四代</a>
+                </li>
+                <div class="clearfix"></div>
+            </ul>
+
+        </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <section id="banner">
+
+                <div class="bgimg-1">
+                    <span class="title-1">PLAY STATION</span>
+                </div>
+
+                <h3 class="H3">PLAY STATION</h3>
+                <div class="text-1">
+                    PlayStation（日語：プレイステーション，官方縮寫為「PS」，通常被稱為「PS1」或其代號「PSX」）是由索尼電腦娛樂開發和發售的家用遊戲機。主機於1994年12月3日在日本發布，[1]1995年9月9日在北美發售，1995年9月29日在歐洲發售，1995年11月15日在澳大利亞發售。這款遊戲機是PlayStation系列家用視訊遊戲機的第一款。作為第五世代遊戲機的一部分，與其他第五時代遊戲機如任天堂64和SEGA土星競爭。
+                </div>
+            </section>
+
+            <section id="middle-top">
+                <div class="bgimg-2">
+                    <span class="title-2">PLAY STATION 2</span>
+                </div>
+                <div class="text-2">
+                    PlayStation
+                    2（日文：プレイステーション2，日文簡稱プレステ2。），簡稱PS2，是索尼電腦娛樂（SCE）在2000年3月4日開始販售的家用遊戲機。在中國大陸，索尼（中國）的行銷口號是：「△○×□，很有PS風格的感覺」。在台灣，索尼電腦娛樂（台灣）則是以：「就是這一部」，強調不僅能玩遊戲更能播放DVD。主要競爭對手是SEGA的Dreamcast、微軟的Xbox和任天堂的GameCube。PS2平台上已推出了達10,828款遊戲。[1]PS2擁有數個家用遊戲機的紀錄：史上最高銷量（1億5768萬部）、銷售時間最長（12年）、官方廠商支援時間最長（18年）。
+
+                    索尼娛樂於2012年12月28日在日本官網上發布消息，確認PS2正式終止銷售，至此全世界累計銷售1億5000萬部以上。[2]日本Sony官方宣布主機維修期限至2018年8月31日止。
+                </div>
+            </section>
+
+            <section id="middle-btm">
+                <div class="bgimg-3">
+                    <span class="title-3">PLAY STATION 3</span>
+                </div>
+                <div class="text-3">PlayStation 3（簡稱為：PS3）是索尼互動娛樂所開發的家用遊戲機，也是該公司推出的第三款電視遊戲機。PlayStation
+                    3於2006年11月11日在日本發售[5]，同年11月17日於美國、香港及台灣上市，2007年3月23日於歐洲和大洋洲推出。剛推出時分別是配有20 GB硬碟的基本款式，以及配有60
+                    GB硬碟和部份額外功能（無線連網、3種記憶卡插槽）的進階機種（20 GB的機種並未於歐洲和大洋洲發行）。2009年9月，PlayStation 3推出較薄及更大容量的改良機型PS3
+                    Slim。2012年9月，推出更輕巧的新型PS3 Super Slim。2017年停產。
+                </div>
+            </section>
+
+            <section id="bottom">
+                <div class="bgimg-4">
+                    <span class="title-4">PS4 PRO</span>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+</body>
+
+</html>
